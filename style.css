@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;700&family=Noto+Sans:wght@100;600&family=Playfair+Display&display=swap');
+:root{
+    --rosaEscuro: #ae3846; 
+    --rosaClaro: #ae3846;
+    --vinho: #711322;
+    --marrom: #a76056;
+    --bege: #d8c5bc;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-weight: 700;
+    background-color: var(--bege);
+}
+header{
+    background: url("./assets/bgh.jpg");
+    height: calc(100vh - 150px);
+    background-size: cover;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav p{
+  font-size: 24px;
+  margin-left: 20px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    margin: 15px;
+    cursor: pointer;
+}
+header nav ul li a:hover{
+    color: var(--marrom);
+}
+header nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 150px auto;
+    align-items: center;
+    animation: ease movimento-texto 2s forwards;
+}
+h1{
+    font-size: 34pt;
+}
+@keyframes movimento-texto{
+    from{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(-60px);
+        opacity: 1;
+    }
+}
+#saibaMais{
+    width: 10%;
+    height: 20%;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--rosaClaro);
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+}
+.pacotes{
+    background-color:var(--bege);
+    padding: 25px;
+}
+.pacotes-title{
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+.pacotes .pacotes-cards{
+    margin: auto;
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pacotes .card{
+    margin: 25px;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    position: relative;
+}
+.pacotes .card-image{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+.pacotes-cards .card-top{
+    color:white;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background-color: var(--rosaEscuro);
+    padding: 8px 8px;
+    border-radius: 8px 0 0 8px;
+}
+.pacotes-cards .card-bottom{
+    color: rgb(253, 246, 246);
+    position: absolute;
+    top: 160px;
+    background-color: var(--marrom);
+    padding: 8px 8px;
+    border-radius: 0 8px 8px 0;
+}
+.card-content{
+    color: grey;
+}
+.card-content ul{
+    list-style: none;
+}
+.servicos{
+    padding: 15px;
+}
+#servicos-title{
+    text-align: center;
+}
+#servicos-cards{
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+#servicos-cards .card{
+    width: 250px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#servicos-cards .card img{
+    width: 50px;
+}
+footer{
+    background-color: #FFF0F5;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 0;
+}
